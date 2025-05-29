@@ -19,7 +19,6 @@ function getShapeStats(shape) {
     const { geometry, properties } = shape;
     const stats = { type: properties.type, color: properties.color };
 
-    // Conversion factors (assuming original units are meters)
     const METERS_TO_KM = 1000;
     const SQ_METERS_TO_SQ_KM = 1_000_000;
 

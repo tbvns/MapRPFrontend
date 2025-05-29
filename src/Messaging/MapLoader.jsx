@@ -3,7 +3,7 @@ import WebSocketService from "./WebSocketService.jsx";
 
 export async function loadInitialMapData() {
     try {
-        const response = await fetch('http://localhost:8080/getMaps');
+        const response = await fetch('/api/getMaps');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

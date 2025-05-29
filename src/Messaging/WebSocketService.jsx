@@ -12,7 +12,7 @@ class WebSocketService {
         if (this.client) return;
 
         // Ensure the WebSocket URL is correct for your environment
-        const socket = new SockJS('http://localhost:8080/ws');
+        const socket = new SockJS('/api/ws');
         this.client = new Client({
             webSocketFactory: () => socket,
             reconnectDelay: 5000, // Time in milliseconds to wait before attempting to reconnect
