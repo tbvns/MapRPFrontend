@@ -1,0 +1,42 @@
+.buttonsList {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.search-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #2c3e50;
+    padding: 8px;
+}
+
+.search-button:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.search-button.active {
+    background-color: #f0f4f8;
+    color: #1a73e8;
+    border-color: #d0d7e0;
+}
+
+.search-button svg {
+    transition: transform 0.2s ease;
+}
+
+.search-button:hover svg {
+    transform: scale(1.1);
+}
